@@ -1,7 +1,10 @@
 
 import 'package:flutter/material.dart';
+import 'package:shahiq/presentation/Settings/Settings.dart';
 import 'package:shahiq/presentation/explore_page/explore_page.dart';
 import 'package:shahiq/presentation/home_page/home_page.dart';
+
+import '../../Settings/ShahiqPlus.dart';
 
 
 
@@ -14,8 +17,8 @@ class MainHomeController extends ChangeNotifier{
   List<Widget> body=[
     HomePage(),
     ExplorePage(),
-    ExplorePage(),
-    ExplorePage(),
+    ShahiqPlus(),
+    Settings(),
     // EducationalScreen(),
     // SettingScreen(),
   ];

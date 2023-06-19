@@ -20,6 +20,25 @@ import 'package:shahiq/presentation/favorites_empty_state_screen/favorites_empty
 import 'package:shahiq/presentation/search_empty_state_screen/search_empty_state_screen.dart';
 import 'package:shahiq/presentation/reminder_empty_state_screen/reminder_empty_state_screen.dart';
 
+import '../presentation/Auth/CreateAccountTwoScreen.dart';
+import '../presentation/Auth/CreateAnAccountScreen.dart';
+import '../presentation/Auth/SignInScreen.dart';
+import '../presentation/Auth/resetPassword.dart';
+import '../presentation/Settings/AboutUs.dart';
+import '../presentation/Settings/Downloads.dart';
+import '../presentation/Settings/EditMyProfile.dart';
+import '../presentation/Settings/EditReminder.dart';
+import '../presentation/Settings/Favourites.dart';
+import '../presentation/Settings/MyProfile.dart';
+import '../presentation/Settings/NoteDetials.dart';
+import '../presentation/Settings/Notes.dart';
+import '../presentation/Settings/Policy.dart';
+import '../presentation/Settings/QuestionBeforeStart.dart';
+import '../presentation/Settings/Reminder.dart';
+import '../presentation/Settings/SetAlarm.dart';
+import '../presentation/Settings/Settings.dart';
+import '../presentation/Settings/ShahiqPlus.dart';
+
 class AppRoutes {
   static const String splashScreen = 'splash_screen';
 
@@ -66,6 +85,24 @@ class AppRoutes {
   static const String searchEmptyStateScreen = 'search_empty_state_screen';
 
   static const String reminderEmptyStateScreen = 'reminder_empty_state_screen';
+  static const String createAccountScreen = 'createAnAccount';
+  static const String createAccountTwoScreen = 'createAnTwoAccount';
+  static const String logInScreen = 'logInScreen';
+  static const String resetPassword = 'resetPassword';
+  static const String settings = 'settings';
+  static const String myProfile = 'myProfile';
+  static const String editMyProfile = 'editMyProfile';
+  static const String favourites = 'favourites';
+  static const String downloads = 'downloads';
+  static const String notes = 'notes';
+  static const String noteDetails = 'noteDetails';
+  static const String reminder = 'reminder';
+  static const String editReminder = 'editReminder';
+  static const String policy = 'policy';
+  static const String aboutUs = 'aboutUs';
+  static const String questionBeforeStart = 'questionBeforeStart';
+  static const String setAlarm = 'setAlarm';
+  static const String shahiqPlus = 'shahiqPlus';
 
 
   static Map<String, WidgetBuilder> routes = {
@@ -87,5 +124,23 @@ class AppRoutes {
     favoritesEmptyStateScreen: (context) => FavoritesEmptyStateScreen(),
     searchEmptyStateScreen: (context) => SearchEmptyStateScreen(),
     reminderEmptyStateScreen: (context) => ReminderEmptyStateScreen(),
+    createAccountScreen: (context) => CreateAccountScreen(),
+    createAccountTwoScreen: (context) => CreateAccountTwoScreen(),
+    logInScreen: (context) => LogInScreen(),
+    resetPassword: (context) => ResetPassword(),
+    settings: (context) => Settings(),
+    myProfile: (context) => MyProfile(),
+    editMyProfile: (context) => EditMyProfile(),
+    favourites: (context) => Favourite(),
+    downloads: (context) => Downloads(),
+    notes: (context) => Notes(),
+    noteDetails: (context) => NoteDetials(),
+    reminder: (context) => Reminder(),
+    editReminder: (context) => EditReminder(),
+    policy: (context) => Policy(),
+    aboutUs: (context) => AboutUs(),
+    questionBeforeStart: (context) => QuestionBeforeStart(),
+    setAlarm: (context) => SetAlarm(),
+    shahiqPlus: (context) => ShahiqPlus(),
   };
 }
