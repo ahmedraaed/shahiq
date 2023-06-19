@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
                 leadingWidth: 60.w,
                 leading: InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, AppRoutes.profileScreen);
+                    // Navigator.pushNamed(context, AppRoutes.profileScreen);
                   },
                   child: CustomImageView(
                       imagePath: ImageConstant.imgEllipse,
